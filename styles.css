@@ -1,0 +1,12 @@
+.cabeza{
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+}
+
+.raya{
+width: auto;
+height: 0;
+border-top: 1px solid black;
+margin: 15px 0;
+}
