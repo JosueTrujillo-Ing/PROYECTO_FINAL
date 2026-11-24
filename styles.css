@@ -1,12 +1,282 @@
-.cabeza{
-    background-color: darkblue;
-    color: white;
-    text-align: center;
+html {
+  scroll-behavior: smooth; /* para que el menú baje suave */
 }
 
-.raya{
-width: auto;
-height: 0;
-border-top: 1px solid black;
-margin: 15px 0;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  background: linear-gradient(#4a4a4a, #8c8c8c);
+  background-repeat: no-repeat;
+}
+
+header {
+  text-align: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #777;
+}
+
+.logo {
+  width: 230px;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 0 15px;
+}
+
+nav a:hover {
+  color: #ff3b3b;
+}
+
+nav input {
+  width: 150px;
+  padding: 4px 10px;
+  border-radius: 15px;
+  border: 1px solid black;
+  background-color: #ffe6e6;
+  margin-left: 10px;
+}
+
+.inicio {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.imagen-principal {
+  width: 300px;
+}
+
+.inicio h1 {
+  font-size: 36px;
+  margin: 10px 0 5px 0;
+}
+
+.inicio p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.boton-rojo {
+  display: inline-block;
+  background-color: red;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 8px 15px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.seccion {
+  padding: 30px 20px;
+  border-top: 1px solid #777;
+}
+
+.titulo-seccion {
+  font-size: 36px;
+  margin: 0 0 20px 40px;
+}
+
+.lista-productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px 40px 30px 40px;
+}
+
+.tarjeta {
+  position: relative;
+  background-color: white;
+  color: #1a237e;
+  width: 160px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.tarjeta img {
+  width: 100%;
+  height: 110px;
+  object-fit: contain;
+}
+
+.nombre {
+  font-size: 11px;
+  font-weight: bold;
+  margin: 8px 0 3px 0;
+}
+
+.precio {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0 0 8px 0;
+}
+
+.tarjeta button {
+  width: 100%;
+  background-color: #00b300;
+  color: black;
+  font-size: 14px;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.tarjeta button:hover {
+  background-color: #008a00;
+}
+
+.descuento {
+  position: absolute;
+  top: -15px;
+  right: -20px;
+  background-color: red;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 5px 10px;
+  transform: rotate(15deg);
+}
+
+.precio-viejo {
+  color: red;
+  text-decoration: line-through;
+  margin-right: 8px;
+}
+
+.precio-nuevo {
+  color: #1a237e;
+}
+
+footer {
+  border-top: 1px solid #777;
+  padding: 25px 40px;
+}
+
+.bloque-footer {
+  max-width: 220px;
+}
+
+footer h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+footer p {
+  font-size: 11px;
+}
+
+footer ul {
+  font-size: 11px;
+  font-weight: bold;
+  padding-left: 18px;
+}
+
+#contactos p {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 12px 0;
+}
+
+.derechos {
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+@media (max-width: 900px) {
+
+  .logo {
+    width: 200px;
+  }
+
+  nav a {
+    margin: 0 8px;
+  }
+
+  .imagen-principal {
+    width: 260px;
+  }
+
+  .inicio h1 {
+    font-size: 30px;
+  }
+
+  .titulo-seccion {
+    margin-left: 20px;
+  }
+
+  .lista-productos {
+    gap: 20px;
+    padding: 20px;
+  }
+
+  footer {
+    padding: 20px 30px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .logo {
+    width: 160px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px 8px;
+    font-size: 13px;
+  }
+
+  nav input {
+    display: block;
+    width: 80%;
+    margin: 10px auto 0 auto;
+  }
+
+  .imagen-principal {
+    width: 200px;
+  }
+
+  .inicio h1 {
+    font-size: 24px;
+  }
+
+  .titulo-seccion {
+    font-size: 28px;
+    margin-left: 10px;
+  }
+
+  .lista-productos {
+    gap: 15px;
+    padding: 15px 5px;
+  }
+
+  .tarjeta {
+    width: 130px;
+  }
+
+  .descuento {
+    font-size: 14px;
+    right: -10px;
+  }
+
+  footer {
+    padding: 20px;
+  }
+
+  .bloque-footer {
+    max-width: 100%;
+  }
 }

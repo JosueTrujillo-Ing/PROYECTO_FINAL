@@ -1,25 +1,192 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OCTALAB</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<header> 
-<div class="cabeza">
-    <img src="" alt="">
-<h1>OCTALAB</h1>
-<button class="boton">INICIO</button>       
-<button class="boton">PRODUCTOS</button>
-<button class="boton">OFERTAS</button>
-<button class="boton">NOSOTROS</button>
-    <button class="boton">CONTACTOS</button>
-    <input type="search" placeholder="Buscar Productos... ">
-</div>
-<div class="raya">
-</div>
-</header>
 <body>
+  <header>
+    <img src="imagenes/logo.png" alt="Logo OCTALAB" class="logo">
+
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#productos">Productos</a>
+      <a href="#ofertas">Ofertas</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contactos">Contactos</a>
+      <input type="text" placeholder="Buscar productos...">
+    </nav>
+  </header>
+  <section id="inicio" class="inicio">
+    <img src="imagenes/hero.png" alt="Equipo de boxeo" class="imagen-principal">
+    <h1>ENTRENA COMO UN CAMPEÓN</h1>
+    <p>Encuentra guantes, vendas, protectores y todo para tu entrenamiento.</p>
+    <a href="#productos" class="boton-rojo">Ver productos</a>
+  </section>
+  <section id="productos" class="seccion">
+    <h2 class="titulo-seccion">Productos</h2>
+
+    <div class="lista-productos">
+
+      <div class="tarjeta">
+        <img src="imagenes/guantes.png" alt="Guantes de boxeo">
+        <p class="nombre">Guantes de boxeo 12 oz</p>
+        <p class="precio">59.99$</p>
+        <a href="https://wa.me" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+  <button type="button">Comprar</button>
+</a>
+      </div>
+
+      <div class="tarjeta">
+        <img src="imagenes/casco.png" alt="Casco de entrenamiento">
+        <p class="nombre">Casco de entrenamiento</p>
+        <p class="precio">69.99$</p>
+        <a href="https://wa.me" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+  <button type="button">Comprar</button>
+</a>
+
+      </div>
+
+      <div class="tarjeta">
+        <img src="imagenes/saco.png" alt="Saco de boxeo">
+        <p class="nombre">Saco de boxeo</p>
+        <p class="precio">149.99$</p>
+        <a href="https://wa.me" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+  <button type="button">Comprar</button>
+</a>
+
+      </div>
+
+      <div class="tarjeta">
+        <img src="imagenes/vendas.png" alt="Vendas de boxeo">
+        <p class="nombre">Vendas de boxeo</p>
+        <p class="precio">9.99$</p>
+        <a href="https://wa.me" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+  <button type="button">Comprar</button>
+</a>
+
+      </div>
+
+      <div class="tarjeta">
+        <img src="imagenes/protector.png" alt="Protector bucal">
+        <p class="nombre">Protector Bucal</p>
+        <p class="precio">7.99$</p>
+        <a href="https://wa.me" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+  <button type="button">Comprar</button>
+</a>
+
+      </div>
+
+      <div class="tarjeta">
+        <img src="imagenes/cuerda.png" alt="Cuerda para saltar">
+        <p class="nombre">Cuerda para saltar</p>
+        <p class="precio">12.99$</p>
+        <a href="https://wa.me" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+  <button type="button">Comprar</button>
+</a>
+
+      </div>
+
+      <div class="tarjeta">
+        <img src="imagenes/espinilleras.png" alt="Espinilleras">
+        <p class="nombre">Espinilleras</p>
+        <p class="precio">34.99$</p>
+        <a href="https://wa.me" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+  <button type="button">Comprar</button>
+</a>
+
+      </div>
+
+      <div class="tarjeta">
+        <img src="imagenes/guantes-enfoque.png" alt="Guantes de enfoque">
+        <p class="nombre">Guantes de enfoque</p>
+        <p class="precio">24.99$</p>
+        <a href="https://wa.me" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+  <button type="button">Comprar</button>
+</a>
+
+      </div>
+
+    </div>
+  </section>
+  <section id="ofertas" class="seccion">
+    <h2 class="titulo-seccion">Ofertas</h2>
+
+    <div class="lista-productos">
+
+      <div class="tarjeta">
+        <span class="descuento">-50% off</span>
+        <img src="imagenes/guantes.png" alt="Guantes de boxeo">
+        <p class="nombre">Guantes de boxeo 12 oz</p>
+        <p class="precio">
+          <span class="precio-viejo">59.99$</span>
+          <span class="precio-nuevo">29.99$</span>
+        </p>
+        <a href="https://wa.me" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+  <button type="button">Comprar</button>
+</a>
+
+      </div>
+
+      <div class="tarjeta">
+        <span class="descuento">-50% off</span>
+        <img src="imagenes/saco.png" alt="Saco de boxeo">
+        <p class="nombre">Saco de boxeo</p>
+        <p class="precio">
+          <span class="precio-viejo">149.99$</span>
+          <span class="precio-nuevo">74.99$</span>
+        </p>
+        <a href="https://wa.me" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+  <button type="button">Comprar</button>
+</a>
+
+      </div>
+
+      <div class="tarjeta">
+        <span class="descuento">-50% off</span>
+        <img src="imagenes/espinilleras.png" alt="Espinilleras">
+        <p class="nombre">Espinilleras</p>
+        <p class="precio">
+          <span class="precio-viejo">34.99$</span>
+          <span class="precio-nuevo">17.49$</span>
+        </p>
+        <a href="https://wa.me" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+  <button type="button">Comprar</button>
+</a>
+
+      </div>
+
+    </div>
+  </section>
+  <footer>
+
+    <div id="nosotros" class="bloque-footer">
+      <h2>Acerca de OCTALAB</h2>
+      <p>
+        En OCTALAB ayudamos a que todos entrenen con el equipo que necesitan.
+        Vendemos guantes, vendas, protectores y accesorios originales, con
+        atención personalizada y precios justos.
+      </p>
+      <ul>
+        <li>Productos originales</li>
+        <li>Atención personalizada</li>
+        <li>Garantía</li>
+      </ul>
+    </div>
+
+    <div id="contactos" class="bloque-footer">
+      <h2>Contactos</h2>
+      <p> +591 76425262</p>
+      <p> octalab@gmail.com</p>
+      <p> Potosí-Bolivia</p>
+      <p> 76425262</p>
+    </div>
+
+    <p class="derechos">© 2026 OCTALAB. Todos los derechos reservados.</p>
+
+  </footer>
+
 </body>
 </html>
